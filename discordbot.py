@@ -21,5 +21,9 @@ async def sodayo(ctx):
 async def iiy(ctx):
     await ctx.send('いいよ!こいよ!')
     
+@bot.command()
+async def ko(cty);
+    await ctx.send('こ↑こ↓')
+    
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
