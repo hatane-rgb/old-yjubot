@@ -22,7 +22,7 @@ async def iiy(ctx):
     await ctx.send('いいよ!こいよ!')
     
 @bot.command()
-async def ko(cty);
+async def ko(ctx):
     await ctx.send('こ↑こ↓')
     
 token = getenv('DISCORD_BOT_TOKEN')
