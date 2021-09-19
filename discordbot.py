@@ -25,5 +25,17 @@ async def iiy(ctx):
 async def ko(ctx):
     await ctx.send('こ↑こ↓')
     
+@bot.command()
+async def yakiniku(ctx):
+    await ctx.send('焼いてかない？')
+    
+@bot.command()
+async def sa(ctx):
+    await ctx.send('サッー！（迫真）')
+    
+@bot.command()
+async def shiro(ctx):
+    await ctx.send('すっげえ白くなってる。はっきりわかんだね')
+    
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
