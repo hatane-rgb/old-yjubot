@@ -37,9 +37,6 @@ async def sa(ctx):
 async def shiro(ctx):
     await ctx.send('すっげえ白くなってる。はっきりわかんだね')
     
-@client.event
-async def on_ready():
-    await message.channel.send('botを更新しました。')
 
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
