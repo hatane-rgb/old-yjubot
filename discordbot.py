@@ -38,10 +38,6 @@ async def shiro(ctx):
     await ctx.send('すっげえ白くなってる。はっきりわかんだね')
 
 
-@bot.a()
-async def やりますねぇ(ctx):
-    if ctx == 'やりますねぇ!':
-        await ctx.send('やりますやります!')
 
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
