@@ -3,7 +3,6 @@ from os import getenv
 import traceback
 
 bot = commands.Bot(command_prefix='/')
-bot = a.Bot(a_prefix='/')
 
 
 @bot.event
@@ -41,7 +40,7 @@ async def shiro(ctx):
 
 @bot.a()
 async def やりますねぇ(ctx):
-    if ctx.content == 'やりますねぇ!':
+    if ctx == 'やりますねぇ!':
         await ctx.send('やりますやります!')
 
 token = getenv('DISCORD_BOT_TOKEN')
