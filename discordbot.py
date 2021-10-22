@@ -36,7 +36,17 @@ async def sa(ctx):
 @bot.command()
 async def shiro(ctx):
     await ctx.send('すっげえ白くなってる。はっきりわかんだね')
-    
+
+@bot.command()
+async def shiro(ctx):
+    await ctx.send('')
+
+@client.event
+async def on_message(message):
+    if message.author.bot:
+        return
+    if message.content == 'やりますねぇ!':
+        await message.channel.send('やりますやります!')
 
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
