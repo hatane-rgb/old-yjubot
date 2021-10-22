@@ -39,11 +39,11 @@ async def shiro(ctx):
 
 
 @bot.command()
-async def on_message(message):
-    if message.author.bot:
+async def やりますねぇ(ctx):
+    if ctx.author.bot:
         return
-    if message.content == 'やりますねぇ!':
-        await message.channel.send('やりますやります!')
+    if ctx.content == 'やりますねぇ!':
+        await ctx.channel.send('やりますやります!')
 
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
