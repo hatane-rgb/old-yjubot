@@ -38,7 +38,7 @@ async def shiro(ctx):
     await ctx.send('すっげえ白くなってる。はっきりわかんだね')
 
 
-@bot.hannou()
+@bot.command()
 async def on_message(message):
     if message.author.bot:
         return
