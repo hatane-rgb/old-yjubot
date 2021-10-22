@@ -37,9 +37,6 @@ async def sa(ctx):
 async def shiro(ctx):
     await ctx.send('すっげえ白くなってる。はっきりわかんだね')
 
-@bot.command()
-async def shiro(ctx):
-    await ctx.send('')
 
 @client.event
 async def on_message(message):
